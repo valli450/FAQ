@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>FAQ Accordion Card</title>
+  <link rel="stylesheet" href='./styles.css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class='box-image'>
+    <img src='./images/illustration-box-desktop.svg' class='box-desktop'>
+  </div>
+  <div class="whale-section">
+    <heder>
+      <nav></nav>
+    </heder>
+    <main>
+      <div class='photo-container'>
+        <div class='mobile'>
+          <img src='./images/illustration-woman-online-mobile.svg'>
+        </div>
+        <div class='desktop'>
+          <div class='photo-container-woman'>
+            <img src='./images/illustration-woman-online-desktop.svg' class='online-woman'>
+          </div>
+          
+        </div>
+      </div><!--photo-container-->
+      <div class='text'>
+        <div class="faq">
+          <h1>FAQ</h1>
+        </div><!--faq-->
+        <div class="question">
+          <div class='invite flex-section'>
+            <p>How many team members can I invite?</p>
+            <button onclick='openMore("answer-invite", "more-icon-invite", "invite")'>
+              <img src='./images/icon-arrow-down.svg' alt='icon-arrow-down' id='more-icon-invite'>
+            </button>
+          </div><!--invite-->
+          <div class='answer answer-invite'>
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is no limit on 
+              team members for the Premium plan.
+            </p>
+          </div><!--answer-->
+        </div><!--question1-->
+        <div class="question">
+          <div class='max-file flex-section'>
+            <p>What is the maximum file upload size?</p>
+            <button  onclick='openMore("answer-max", "more-icon-max", "max-file")'>
+              <img src='./images/icon-arrow-down.svg' alt='icon-arrow-down' id='more-icon-max'>
+            </button>
+          </div><!--max-file-->
+          <div class='answer answer-max'>
+            <p>
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </div><!--answer-->
+        </div><!--question2-->
+        <div class="question">
+          <div class='password flex-section'>
+            <p>How do I reset my password?</p>
+            <button onclick='openMore("answer-password", "more-icon-password", "password")'>
+              <img src='./images/icon-arrow-down.svg' alt='icon-arrow-down' id='more-icon-password'>
+            </button>
+          </div><!--password-->
+          <div class="answer answer-password">
+            <p>
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </div><!--answer-->
+        </div><!--question3-->
+        <div class="question">
+          <div class='subscription flex-section '>
+            <p>Can I cancel my subscription?</p>
+            <button onclick='openMore("answer-subscription", "more-icon-subscription", "subscription")'>
+              <img src='./images/icon-arrow-down.svg' alt='icon-arrow-down' id='more-icon-subscription'>
+            </button>
+          </div><!--subscription-->
+          <div class="answer answer-subscription">
+            <p>
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </div><!--answer-->
+        </div><!--question4-->
+        <div class="question">
+          <div class='support flex-section '>
+            <p>Do you provide additional support?</p>
+            <button onclick='openMore("answer-support", "more-icon-support", "support")'>
+              <img src='./images/icon-arrow-down.svg' alt='icon-arrow-down' id='more-icon-support'>
+            </button>
+          </div><!--support-->
+          <div class="answer answer-support">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div><!--answer-->
+        </div><!--question5-->
+      </div><!--text-->
+    </main>
+    <footer></footer>
+  </div> 
+  <script src="./main.js"></script>
+</body>
+</html>

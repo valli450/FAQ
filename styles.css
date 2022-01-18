@@ -1,0 +1,270 @@
+/* Root*/
+:root{
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: var(--dark-grayish-blue);
+}
+
+.box-image{
+    display: none;
+}
+
+button{
+    border: none;
+    background: #fff;
+}
+
+/* Style */
+body {
+    position: relative;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    margin: 10rem auto;
+    width: 20rem;
+    background: linear-gradient(to bottom, var(--soft-violet) , var(--soft-blue));
+    background-repeat: no-repeat;
+    background-repeat: cover;
+}
+
+.whale-section{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 20px;
+    width: 20rem;
+}
+
+header{
+    margin: 1rem;
+}
+
+.photo-container{
+    margin-top: -7.3rem;
+    text-align: center;
+    
+}
+
+.photo-container .mobile{
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    background-size: 14rem;
+    height: 13rem;
+}
+
+.photo-container .mobile img{
+    width: 14rem;
+}
+
+.photo-container .desktop{
+    display: none;
+}
+
+.text{
+    margin-bottom: 1rem;
+}
+
+.text .faq{
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.text .question {
+    border-bottom: 1px solid lightgrey;
+}
+
+
+.text .question .flex-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+
+.text .question .flex-section img{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.text .question .flex-section:hover p{
+    color:var(--soft-red);
+}
+
+.text .question .answer{
+   display: none;
+
+}
+
+.text .question .action{
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.question .rotate img{
+    transform: rotate(180deg);
+} 
+
+.question .rotate p{
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+@media (min-width: 400px){
+    body{
+        width: 24rem;
+    }
+
+    .whale-section{
+        width: 24rem;
+        padding: 2rem;
+    }
+
+    .photo-container .mobile{
+        background-position: center 120px;
+        background-size: 18rem;
+        height: 16rem;
+    }
+
+    .photo-container{
+        margin-top: -10.2rem;  
+    }
+    
+    .photo-container .mobile img{
+        width: 18rem;
+    }
+}
+
+@media (min-width: 480px){
+    body{
+        width: 28rem;
+    }
+
+    .whale-section{
+        width: 28rem;
+        padding: 2.5rem;
+    }
+
+    .photo-container .mobile{
+        background-position: center 140px;
+        background-size: 22rem;
+        height: 19rem;
+    }
+
+    .photo-container{
+        margin-top: -12.4rem;  
+    }
+    
+    .photo-container .mobile img{
+        width: 22rem;
+    }
+}
+
+@media (min-width: 769px){
+    body{
+        display: flex;
+        position: relative;
+        width: 38rem;
+    }
+    .whale-section{
+        overflow: hidden;
+        width: 38rem;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 550px;
+        background-position: -300px -130px;
+    }
+    
+    .box-image{
+        display: block;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    main .photo-container .mobile{
+        display: none;
+    }
+
+    main .photo-container{
+        margin-left: -6.4rem;
+        margin-top: 1rem;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
+    main .photo-container .desktop{
+        display: block;
+    }
+
+    .box-desktop{
+        width: 6rem;
+        margin-top: -1.6rem;
+        margin-left: -2.4rem;
+        position: absolute;
+    }
+
+    .desktop .online-woman{
+        width: 18rem;
+    }
+
+    .question{
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 920px){
+    body{
+        width: 50rem;
+    }
+
+    .whale-section{
+        width: 50rem;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-attachment: fixed;
+        background-size: 800px;
+        background-repeat: no-repeat;
+        background-position: -437px -80px;
+    }
+
+    main .photo-container{
+        margin-left: -10.3rem;
+        margin-top: 1rem;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+
+    .box-desktop{
+        width: 8rem;
+        margin-top: -1.6rem;
+        margin-left: -3.5rem;
+
+    }
+
+    .desktop .online-woman{
+        width: 22rem;
+    }
+
+
+}
